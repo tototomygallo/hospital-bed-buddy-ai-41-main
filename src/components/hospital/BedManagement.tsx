@@ -88,7 +88,10 @@ const BedManagement: React.FC<BedManagementProps> = ({ bed, userRole, onClose })
                   </div>
                   <div>
                     <Label className="text-sm font-medium">Prioridad</Label>
-                    <Badge variant={bed.paciente.prioridad === 'alta' ? 'destructive' : 'default'}>
+                    <Badge 
+                      className="ml-2" 
+                      variant={bed.paciente.prioridad === 'alta' ? 'destructive' : 'default'}
+                    >
                       {bed.paciente.prioridad}
                     </Badge>
                   </div>
